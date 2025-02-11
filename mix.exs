@@ -9,6 +9,7 @@ defmodule Elrec.MixProject do
       app: :elrec,
       version: @version,
       name: :ELREC,
+      description: "Elixir List Recursion & Enum Converter",
       source_url: @source_url,
       elixir: "~> 1.18",
       escript: [main_module: Elrec.CLI],
