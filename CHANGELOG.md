@@ -1,5 +1,8 @@
 # ChangeLog
 
+## 0.1.2
+- Add Mix task
+
 ## 0.1.1
 
 - Add Benchee to the dependencies
