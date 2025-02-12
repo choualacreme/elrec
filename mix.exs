@@ -2,7 +2,7 @@ defmodule Elrec.MixProject do
   use Mix.Project
 
   @source_url "https://github.com/choualacreme/elrec"
-  @version "0.1.0"
+  @version "0.1.1"
 
   def project do
     [
@@ -11,7 +11,7 @@ defmodule Elrec.MixProject do
       name: :ELREC,
       description: "Elixir List Recursion & Enum Converter",
       source_url: @source_url,
-      elixir: "~> 1.18",
+      elixir: "~> 1.14",
       escript: [main_module: Elrec.CLI],
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -31,7 +31,7 @@ defmodule Elrec.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:benchee, "~> 1.0", only: [:dev, :test]},
+      {:benchee, "~> 1.0"},
       {:credo, "~> 1.7", only: :dev, runtime: false},
       {:ex_doc, "~> 0.10", only: :dev}
     ]
